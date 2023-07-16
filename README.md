@@ -67,10 +67,10 @@ The project is implemented in Python, using the TensorFlow and Keras libraries f
 
 # How to Run
 
-Run the machine learning backend: python Final.py
-Run the Laravel server: php artisan serve
-Open the Laravel website on a browser with the URL displayed in the console.
-Run the Flutter app: flutter run
+- Run the machine learning backend: python Final.py
+- Run the Laravel server: php artisan serve
+- Open the Laravel website on a browser with the URL displayed in the console.
+- Run the Flutter app: flutter run
 
 # Contact
 
