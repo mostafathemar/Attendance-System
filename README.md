@@ -46,10 +46,11 @@ Flutter 2.0 or above
 
 # Installation
 
-Clone the repo: git clone https://github.com/mostafathemar/Attendance-System
-Install Python packages: pip install tensorflow keras opencv-python numpy pandas mysql-connector-python
-1. Set up your PHP, Laravel, and Flutter environments according to their respective official guides.
-2. Set up your MySQL database and update the configuration in the application.
+Clone the repo: git clone https://github.com/mostafathemar/Attendance-System.
+Install Python packages: pip install tensorflow keras opencv-python numpy pandas mysql-connector-python:
+
+  - Set up your PHP, Laravel, and Flutter environments according to their respective official guides.
+  - Set up your MySQL database and update the configuration in the application.
    
 # Technical Details
 
@@ -78,12 +79,12 @@ For any queries, please feel free to reach out to us at mostafathemar@email.com.
 
 # Acknowledgments
 
-Open Source Face Recognition Library
-ImageNet Dataset
-VGG19
-MobileNetV2
-FaceNet
-ResNet
-PHP
-Laravel
-Flutter
+- Open Source Face Recognition Library
+- ImageNet Dataset
+- VGG19
+- MobileNetV2
+- FaceNet
+- ResNet
+- PHP
+- Laravel
+- Flutter
