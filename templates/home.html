@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance System</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attendance System</h1>
+    <button id="startButton">Start Attendance</button>
+    <button id="stopButton">Stop Attendance</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#startButton').click(function() {
+                $.get('/start_attendance', function(data) {
+                    alert(data.message);
+                });
+            });
+
+            $('#stopButton').click(function() {
+                $.get('/stop_attendance', function(data) {
+                    alert(data.message);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Take Attendance In Real Time</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Take Attendance In Real Time</h1>
+
+        <div>
+            <video id="video-feed" width="800" height="600" autoplay></video>
+        </div>
+
+        <div class="controls">
+            <button id="start-attendance">Start Attendance</button>
+            <button id="stop-attendance">Stop Attendance</button>
+        </div>
+    </div>
+    <script>
+        var videoElement = document.getElementById('video-feed');
+        var startButton = document.getElementById('start-attendance');
+        var stopButton = document.getElementById('stop-attendance');
+
+        function startAttendance() {
+            fetch('/start_recording')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('Error starting attendance:', error);
+                });
+        }
+
+        function stopAttendance() {
+            fetch('/stop_recording')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('Error stopping attendance:', error);
+                });
+        }
+
+        startButton.addEventListener('click', startAttendance);
+        stopButton.addEventListener('click', stopAttendance);
+
+        // Get user media and display video feed
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(stream => {
+                videoElement.srcObject = stream;
+            })
+            .catch(error => {
+                console.error('Error accessing camera:', error);
+            });
+    </script>
+</body>
+</html>
