@@ -58,7 +58,7 @@ In this project, transfer learning, a machine learning method where a pre-traine
 
 - VGG19: Pre-trained on the ImageNet dataset, VGG19 was used as a base model, with a custom classification layer added on top for the specific task of face recognition.
 - MobileNetV2: Similar to VGG19, MobileNetV2 pre-trained on the ImageNet dataset was used with a custom SoftMax activation function to fine-tune it for face recognition.
-- FaceNet: The FaceNet model, specifically designed for face recognition, was used to extract meaningful features from face images.
+- InceptionV3: The InceptionV3 model, specifically designed for face recognition, was used to extract meaningful features from face images.
 - ResNet: Residual Neural Network, also pre-trained on ImageNet, was fine-tuned for face recognition by adding custom classification layers.
 - An open-source face recognition library was also leveraged to facilitate face recognition.
 
