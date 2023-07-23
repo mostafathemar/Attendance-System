@@ -23,7 +23,7 @@ This project is a face recognition-based attendance system. It allows users to m
 
 # Background
 
-Our aim is to automate the attendance marking system by using face recognition. The system captures images from the video feed, recognizes faces, and then marks the attendance of the recognized individuals in a MySQL database.
+We aim to automate the attendance marking system by using face recognition. The system captures images from the video feed, recognizes faces, and then marks the attendance of the recognized individuals in a MySQL database.
 
 # System Overview
 
@@ -83,7 +83,7 @@ For any queries, please feel free to reach out to us at mostafathemar@email.com.
 - ImageNet Dataset
 - VGG19
 - MobileNetV2
-- Inceptionv3
+- InceptionV3
 - ResNet
 - PHP
 - Laravel
