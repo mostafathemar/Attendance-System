@@ -83,7 +83,7 @@ For any queries, please feel free to reach out to us at mostafathemar@email.com.
 - ImageNet Dataset
 - VGG19
 - MobileNetV2
-- FaceNet
+- Inceptionv3
 - ResNet
 - PHP
 - Laravel
