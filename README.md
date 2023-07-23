@@ -1,4 +1,4 @@
-# Attendance System: Face Recognition-based Automatic Attendance Marking
+# Attendance System: Face Recognition-based Automatic Attendance Marking.
 
 Table of Contents:
 
